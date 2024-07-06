@@ -34,40 +34,40 @@ Next, I will provide step-by-step instructions to run the project on google cola
 #### 2.1 Clone this repository
 
 ```bash
-$ !git clone https://github.com/zoanhy20/RAG-Application-Lesson-Docs-QA.git
-$ !cd RAG-Application-Lesson-Docs-QA
+!git clone https://github.com/zoanhy20/RAG-Application-Lesson-Docs-QA.git
+!cd RAG-Application-Lesson-Docs-QA
 ```
 
 #### 2.2 Install all reuired packages
 
 ```bash
-$ !pip install -q transformers==4.41.2
-$ !pip install -q bitsandbytes==0.43.1
-$ !pip install -q accelerate==0.31.0
-$ !pip install -q langchain==0.2.5
-$ !pip install -q langchainhub==0.1.20
-$ !pip install -q langchain-chroma==0.1.1
-$ !pip install -q langchain-community==0.2.5
-$ !pip install -q langchain-openai==0.1.9
-$ !pip install -q langchain_huggingface==0.0.3
-$ !pip install -q chainlit==1.1.304
-$ !pip install -q python-dotenv==1.0.1
-$ !pip install -q pypdf==4.2.0
-$ !npm install -g localtunnel
-$ !pip install -q numpy==1.24.4
+!pip install -q transformers==4.41.2
+!pip install -q bitsandbytes==0.43.1
+!pip install -q accelerate==0.31.0
+!pip install -q langchain==0.2.5
+!pip install -q langchainhub==0.1.20
+!pip install -q langchain-chroma==0.1.1
+!pip install -q langchain-community==0.2.5
+!pip install -q langchain-openai==0.1.9
+!pip install -q langchain_huggingface==0.0.3
+!pip install -q chainlit==1.1.304
+!pip install -q python-dotenv==1.0.1
+!pip install -q pypdf==4.2.0
+!npm install -g localtunnel
+!pip install -q numpy==1.24.4
 ```
 
 #### 2.3  Install and config ngrok
 
 ```bash
-$ !pip install -q ngrok
+!pip install -q ngrok
 ```
 
 Add your token in ngrok
 
 ```bash
-$ from ngrok import ngrok
-$ !!ngrok config add-authtoken <YOUR_TOKEN_IN_NGROK>
+from ngrok import ngrok
+!ngrok config add-authtoken <YOUR_TOKEN_IN_NGROK>
 ```
 
 Show the public network for connecting after building the project.
@@ -80,5 +80,5 @@ print(f"Public URL: {public_url}")
 #### 2.4 Build project with chainlit
 
 ```bash
-$ !chainlit run app.py
+!chainlit run app.py
 ```
